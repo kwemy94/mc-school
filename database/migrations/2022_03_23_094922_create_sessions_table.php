@@ -19,6 +19,7 @@ class CreateSessionsTable extends Migration
             $table->string('numero_session');
             $table->date('date_debut');
             $table->date('date_fin');
+            $table->string('statut');
             $table->timestamps();
             $table->softDeletes();
         });

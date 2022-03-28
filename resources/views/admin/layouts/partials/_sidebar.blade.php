@@ -59,6 +59,62 @@
           </li>
           
         </ul>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-close">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Session
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('all.session')}}" class="nav-link">
+                   
+                  <p>Liste Session</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  
+                  <p>Add Seesion</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-close">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Module
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('all.module')}}" class="nav-link">
+                
+                  <p>Liste Module</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('add.module')}}" class="nav-link">
+                  
+                  <p>Add Module</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>

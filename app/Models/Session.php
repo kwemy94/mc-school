@@ -12,7 +12,8 @@ class Session extends Model
          'code_session',
          'numero_session',
          'date_debut',
-         'date_fin'
+         'date_fin',
+         'statut'
     ];
 
     public function matieres() {
