@@ -87,10 +87,12 @@
                     @enderror
                   </div>
 
+                  @if ($sessions->statut === "active")
+                    
                   <div class="form-group">
                     <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
-                      <input type="checkbox" name="statut" class="custom-control-input" id="customSwitch3">
-                      <label class="custom-control-label" for="customSwitch3">Statut1</label>
+                      <input type="checkbox" name="statut" class="custom-control-input" id="customSwitch3" checked>
+                      <label class="custom-control-label" for="customSwitch3">Statut</label>
                     </div>
                     @error('statut')
                     <div >
@@ -98,6 +100,22 @@
                   </div>
                     @enderror
                   </div>
+                    
+                @else
+                    
+                  <div class="form-group">
+                    <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                      <input type="checkbox" name="statut" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3">Statut</label>
+                    </div>
+                    @error('statut')
+                    <div >
+                      <span class="text-danger">{{ $message }} </span>
+                  </div>
+                    @enderror
+                  </div>
+                @endif
+
           
                
               <div class="row">
