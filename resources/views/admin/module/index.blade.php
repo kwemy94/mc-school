@@ -74,7 +74,7 @@
                     </td>
                   </tr>
                 @endforeach
-                
+               
                   </tbody>
                   <a href="{{ route('add.module')}}"><button class="btn btn-info">Add Module</button></a>
                   <br><br>

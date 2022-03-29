@@ -54,7 +54,7 @@ class SessionController extends Controller
         $validated = $request->validate([
             'numero_session' => 'required',
             'date_debut' => 'required',
-            'date_fin' => 'required',
+            'date_fin' => 'required|date|after:date_debut',
             'statut' => '',
 
 

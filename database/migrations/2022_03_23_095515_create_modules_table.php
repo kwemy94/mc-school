@@ -17,7 +17,7 @@ class CreateModulesTable extends Migration
             $table->id();
             $table->integer('code_module');
             $table->string('nom_module');
-            $table->string('description')->nullable;
+            $table->longText('description')->nullable;
             $table->timestamps();
             $table->softDeletes();
         });
